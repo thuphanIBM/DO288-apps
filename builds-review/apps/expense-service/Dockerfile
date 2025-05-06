@@ -1,5 +1,5 @@
 #FROM registry.ocp4.example.com:8443/redhattraining/ocpdev-ubi8-openjdk-17-base:1.16 
-FROM registry.access.redhat.com/ubi8/openjdk-17:1.1
+FROM registry.access.redhat.com/ubi8/openjdk-17
 
 COPY pom.xml .
 RUN mvn dependency:go-offline
